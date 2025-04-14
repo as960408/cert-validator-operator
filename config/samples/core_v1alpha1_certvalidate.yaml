@@ -1,0 +1,9 @@
+apiVersion: core.certwatcher.io/v1alpha1
+kind: CertValidate
+metadata:
+  labels:
+    app.kubernetes.io/name: cert-validator-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: certvalidate-sample
+spec:
+  # TODO(user): Add fields here
