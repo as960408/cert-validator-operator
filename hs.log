@@ -1,0 +1,1000 @@
+ 1017  kubectl delete po   cert-validator-operator-controller-manager-66bf7c4b7-m8tgm --force
+ 1018  kubectl get po -w
+ 1019  kubectl logs cert-validator-operator-controller-manager-66bf7c4b7-bgb4v -f
+ 1020  LS
+ 1021  ls
+ 1022  vi config/manager/manager.yaml 
+ 1023  docker images
+ 1024  docker push as960408/oswatcher-controller:0.11
+ 1025  docker images
+ 1026  kubectl get ds -A
+ 1027  kubectl edit ds -n oswatcher-operator-system   oswatcher-agent  
+ 1028  docker push as960408/oswatcher-controller:0.11
+ 1029  kubectl get ds
+ 1030  kubectl get ds -A
+ 1031  kubectl get ds -A -w
+ 1032  kubectl get ds -A
+ 1033  kubectl get ds -A -w
+ 1034  kubectl get po
+ 1035  kubectl edit po
+ 1036  kubectl get po -o wide
+ 1037  kubectl get ds -A
+ 1038  curl 192.100.104.23:8080
+ 1039  curl 192.100.104.23:8080 -XPOST
+ 1040  ls
+ 1041  curl 192.100.104.23:8080/report -XPOST
+ 1042  ls
+ 1043  clear
+ 1044  kubectl get po -A
+ 1045  kubectl get po -A -w
+ 1046  kubectl get po -A |grep val
+ 1047  kubectl get certvalidate
+ 1048  ls
+ 1049  kubectl get po -A -w
+ 1050  kubectl auth can-i create daemonsets --as=system:serviceaccount:cert-validator-operator-system:cert-validator-operator-controller-manager
+ 1051  kubectl get ds -A
+ 1052  ls
+ 1053  vi internal/controller/certvalidate_controller.go 
+ 1054  cat internal/controller/certvalidate_controller.go 
+ 1055  clear
+ 1056  kubectl get ds -A
+ 1057  kubectl get events -A
+ 1058  kubectl get events -A -w
+ 1059  kubectl get po
+ 1060  kubectl delete -k config/default/
+ 1061  make install
+ 1062  kubectl get po
+ 1063  kubectl getg ns
+ 1064  kubectl get ns
+ 1065  s
+ 1066  cd ../
+ 1067  ls
+ 1068  cd cert-validator-operator/
+ 1069  ls
+ 1070  kubectl get po -a
+ 1071  kubectl get po -A
+ 1072  kubectl get po -A |grep cer
+ 1073  ls
+ 1074  vi internal/controller/certvalidate_controller.go 
+ 1075  kubectl get ds -A
+ 1076  kubectl get ds -A -w
+ 1077  ls
+ 1078  cp internal/controller/certvalidate_controller.go  /home/
+ 1079  cp /tmp/certvalidate_controller.go internal/controller/certvalidate_controller.go 
+ 1080  clear
+ 1081  kubectl get po
+ 1082  kubectl get po -A -w
+ 1083  kubectl get ds -A
+ 1084  kubectl get po
+ 1085  kubectl get ds -A -w
+ 1086  ls
+ 1087  cp /home/certvalidate_controller.go internal/controller/certvalidate_controller.go 
+ 1088  cat internal/controller/certvalidate_controller.go 
+ 1089  kubectl get certvalidate
+ 1090  kubectl get certvalidate -A
+ 1091  kubectl get ds
+ 1092  kubectl get ds -A
+ 1093  kubectl get events -A -w
+ 1094  clear
+ 1095  ls
+ 1096  diff /tmp/certvalidate_controller.go  ./internal/controller/certvalidate_controller.go 
+ 1097  clear
+ 1098  ls
+ 1099  vi api/v1alpha1/certvalidate_types.go 
+ 1100  clear
+ 1101  make install
+ 1102  ls
+ 1103  cd test/
+ 1104  ls
+ 1105  bash shell.sh 
+ 1106  bash shell.sh  -A
+ 1107  kubectl get certvalidate -A
+ 1108  kubectl delete certvalidate -n default     node1-etc-ssl-certs-nginx.crt 
+ 1109  clear
+ 1110  kubectl get ds -A -w
+ 1111  kubectl get ds -n default -w
+ 1112  kubectl get ds -n default -A -w
+ 1113  kubectl get ds
+ 1114  kubectl get ds -ndefault
+ 1115  clear
+ 1116  env |grep -i node
+ 1117  kubectl get osstatus
+ 1118  kubectl get certvalidage
+ 1119  kubectl get certvalidate
+ 1120  kubectl get certvalidate -w
+ 1121  kubectl get ds 
+ 1122  kubectl get ds  -A
+ 1123  cd go/
+ 1124  ls
+ 1125  cd src/
+ 1126  ls
+ 1127  cd cert-validator-operator/
+ 1128  ls
+ 1129  clear
+ 1130  ls
+ 1131  export NODE_SELECTOR="node-role.kubernetes.io/worker="
+ 1132  make run
+ 1133  ls
+ 1134  vi internal/controller/certvalidate_controller.go 
+ 1135  make run
+ 1136  vi internal/controller/certvalidate_controller.go 
+ 1137  make run
+ 1138  vi internal/controller/certvalidate_controller.go 
+ 1139  make run
+ 1140  clear
+ 1141  ls
+ 1142  vi internal/controller/certvalidate_controller.go 
+ 1143  vi /tmp/certvalidate_controller.go 
+ 1144  vi internal/controller/certvalidate_controller.go 
+ 1145  make run
+ 1146  env |grep -i node
+ 1147  vi internal/controller/certvalidate_controller.go 
+ 1148  cat internal/controller/certvalidate_controller.go 
+ 1149  clear
+ 1150  vi internal/controller/certvalidate_controller.go 
+ 1151  make run
+ 1152  vi internal/controller/certvalidate_controller.go 
+ 1153  make run
+ 1154  clear
+ 1155  make run
+ 1156  ;s
+ 1157  kubectl get ds
+ 1158  kubectl delete ds cert-agent
+ 1159  ls
+ 1160  cp internal/controller/certvalidate_controller.go  /tmp/
+ 1161  vi internal/controller/certvalidate_controller.go  
+ 1162  export CERT_DIR="/etc/kubernetes/pki"
+ 1163  export SERVER_URL="http://cert-validator-service.default.svc.cluster.local:8080/report"
+ 1164  make run
+ 1165  vi internal/controller/certvalidate_controller.go  
+ 1166  make run
+ 1167  vi internal/controller/certvalidate_controller.go  
+ 1168  export certDir = "/etc/kubernetes/pki" 
+ 1169  export certDir="/etc/kubernetes/pki" 
+ 1170  vi internal/controller/certvalidate_controller.go  
+ 1171  make run
+ 1172  vi internal/controller/certvalidate_controller.go  
+ 1173  make run
+ 1174  kear
+ 1175  kclear
+ 1176  clear
+ 1177  vi internal/controller/certvalidate_controller.go  
+ 1178  cat internal/controller/certvalidate_controller.go |grep -i certpath
+ 1179  cat internal/controller/certvalidate_controller.go  
+ 1180  vi internal/controller/certvalidate_controller.go  
+ 1181  env |grep -i cert
+ 1182  make run
+ 1183  env |grep -i api
+ 1184  env |grep -i server
+ 1185  vi internal/controller/certvalidate_controller.go  
+ 1186  ls
+ 1187  vi test/dockerizing/cert_agent.sh 
+ 1188  history |grep cert
+ 1189  history |grep cert_0agnet
+ 1190  history |grep cert|grep sh
+ 1191  history |grep SERVER_URL
+ 1192  vi test/dockerizing/cert_agent.sh 
+ 1193  vi internal/controller/certvalidate_controller.go  
+ 1194  ls
+ 1195  kubectl get ds -A
+ 1196  kubectl get ds -A -W
+ 1197  ls
+ 1198  vi internal/controller/certvalidate_controller.go 
+ 1199  make generate
+ 1200  make manifest
+ 1201  make manifests
+ 1202  kubectl get ds -A
+ 1203  kubectl get ds -A-w
+ 1204  kubectl get ds -A -w
+ 1205  kubectl get ds -A
+ 1206  vi internal/controller/certvalidate_controller.go 
+ 1207  history |grep make
+ 1208  history |grep make make docker-build IMG=oswatcher-controller:0.11
+ 1209  history |grep make make docker-build IMG=as960408/oswatcher-controller:0.11
+ 1210  ls
+ 1211  make docker-build IMG=as960408/oswatcher-controller:0.11
+ 1212  docker push as960408/oswatcher-controller:0.11
+ 1213  ls
+ 1214  clear
+ 1215  vi internal/controller/certvalidate_controller.go 
+ 1216  make docker-build IMG=as960408/oswatcher-controller:0.11
+ 1217  vi internal/controller/certvalidate_controller.go 
+ 1218  make docker-build IMG=as960408/oswatcher-controller:0.11
+ 1219  vi internal/controller/certvalidate_controller.go 
+ 1220  make docker-build IMG=as960408/oswatcher-controller:0.11
+ 1221  ls
+ 1222  cd config/
+ 1223  ls
+ 1224  vi manager/manager.yaml 
+ 1225  kubectl apply -f manager/manager.yaml 
+ 1226  kubectl get po
+ 1227  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-bgb4v --forcre
+ 1228  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-bgb4v --force
+ 1229  kubectl get po
+ 1230  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-z7qpg -f
+ 1231  LL
+ 1232  ls
+ 1233  cd ../
+ 1234  ls
+ 1235  vi internal/controller/certvalidate_controller.go 
+ 1236  make manifests
+ 1237  kubectl apply -k config/rbac/
+ 1238  kubectl get po
+ 1239  kubectl logs   cert-validator-operator-controller-manager-66bf7c4b7-z7qpg -f
+ 1240  kubectl get po
+ 1241  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-z7qpg --force
+ 1242  kubectl get po -w
+ 1243  kubectl logs cert-validator-operator-controller-manager-66bf7c4b7-2dkz5 -f
+ 1244  vi internal/controller/certvalidate_controller.go 
+ 1245  make manifests
+ 1246  kubectl apply -k config/rbac/
+ 1247  kubectl get po
+ 1248  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-2dkz5
+ 1249  kubectl get po
+ 1250  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-2dkz5 --force
+ 1251  kubectl get po
+ 1252  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-9zhcp
+ 1253  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-9zhcp -f
+ 1254  ls
+ 1255  vi internal/controller/certvalidate_controller.go 
+ 1256  make manifests
+ 1257  kubectl apply -k config/rbac/
+ 1258  kubectl get po
+ 1259  kubectl edit ds 
+ 1260  kubectl edit ds  -A
+ 1261  kubectl edit ds  -n monitoring
+ 1262  kubectl get ds -A -oyamll
+ 1263  kubectl get ds -A -oyaml
+ 1264  ls
+ 1265  kubectl get po
+ 1266  kubectl apply -k config/rbac/
+ 1267  kubectl get po
+ 1268  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-9zhcp --force
+ 1269  make manifest
+ 1270  make manifests
+ 1271  kubectl get po
+ 1272  kubectl logs cert-validator-operator-controller-manager-66bf7c4b7-mknrh -f
+ 1273  kubectl apply -k config/rbac/
+ 1274  kubectl logs cert-validator-operator-controller-manager-66bf7c4b7-mknrh -f
+ 1275  vi internal/controller/certvalidate_controller.go 
+ 1276  make manifests
+ 1277  kubectl apply -k config/rbac/
+ 1278  ls
+ 1279  vi internal/controller/certvalidate_controller.go 
+ 1280  make manifests
+ 1281  kubectl apply -k config/rbac/
+ 1282  kubectl get po
+ 1283  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-mknrh --force
+ 1284  kubectl get po -w
+ 1285  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-pm272 -f
+ 1286  ls
+ 1287  make manifests
+ 1288  kubectl apply -k config/rbac/
+ 1289  ls
+ 1290  vi internal/controller/certvalidate_controller.go 
+ 1291  make manifests
+ 1292  kubectl apply -k config/rbac/
+ 1293  kubectl get po
+ 1294  kubectl delete po  cert-validator-operator-controller-manager-66bf7c4b7-pm272 --force
+ 1295  kubectl get po
+ 1296  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-w8z6l 
+ 1297  kubectl logs  cert-validator-operator-controller-manager-66bf7c4b7-w8z6l  -f
+ 1298  kubectl auth can-i create daemonsets --as=system:serviceaccount:cert-validator-operator-system:cert-validator-operator-controller-manager
+ 1299  vi config/rbac/kustomization.yaml
+ 1300  vi config/rbac/role.yaml 
+ 1301  ls
+ 1302  kubectl get clusterrolebindings
+ 1303  kubectl get clusterrolebindings |grep  man
+ 1304  kubectl edit clusterrolebindings   manager-rolebinding 
+ 1305  kubectl edit clusterrole  manager-role
+ 1306  kubectl edit ds
+ 1307  kubectl edit ds -
+ 1308  kubectl edit clusterrole  manager-role
+ 1309  kubectl auth can-i create daemonsets --as=system:serviceaccount:cert-validator-operator-system:cert-validator-operator-controller-manager
+ 1310  kubectl edit deploy
+ 1311  kubectl auth can-i create daemonsets --as=system:serviceaccount:cert-validator-operator-system:cert-validator-operator-controller-manager
+ 1312  ls
+ 1313  make manifests
+ 1314  kubectl apply -k config/rbac/
+ 1315  kubectl auth can-i create daemonsets --as=system:serviceaccount:cert-validator-operator-system:cert-validator-operator-controller-manager
+ 1316  ls
+ 1317  clear
+ 1318  ls
+ 1319  kubectl edit clusterrole  manager-role
+ 1320  kubectl edit clusterrolebinding  manager-role-bindings
+ 1321  kubectl edit clusterrolebinding  manager-role-
+ 1322  kubectl edit clusterrolebindings   manager-rolebinding 
+ 1323  kubectl get ns
+ 1324  kubectl get ns |grep system
+ 1325  kubectl get  po -A |grep sys
+ 1326  kubectl get  po -A |grep system
+ 1327  clear
+ 1328  kubectl get po
+ 1329  kubectl get po -A
+ 1330  kubectl get po
+ 1331  ls
+ 1332  clear
+ 1333  ls
+ 1334  cd config/
+ 1335  ls
+ 1336  cd   manager/
+ 1337  ls
+ 1338  vi manager.yaml 
+ 1339  ls
+ 1340  cd ../
+ 1341  ls
+ 1342  kubectl delete -k default/
+ 1343  clear
+ 1344  ls
+ 1345  cd default/
+ 1346  lss
+ 1347  ls
+ 1348  vi kustomization.yaml 
+ 1349  cd ../
+ 1350  ls
+ 1351  cd manager/
+ 1352  ls
+ 1353  vi kustomization.yaml 
+ 1354  vi manager.yaml 
+ 1355  cat manager.yaml |grep oper
+ 1356  cat manager.yaml |grep namespace
+ 1357  ls
+ 1358  clear
+ 1359  ls
+ 1360  vi manager.yaml 
+ 1361  cd  ../../
+ 1362  ls
+ 1363  cd ../
+ 1364  ls
+ 1365  cd cert-validator-operator/
+ 1366  ls
+ 1367  history |grep api
+ 1368  make generate 
+ 1369  make manifests
+ 1370  ls
+ 1371  vi config/manager/manager.yaml 
+ 1372  kubectl get po
+ 1373  ls
+ 1374  kubectl get deploy -A
+ 1375  kubectl ge tdeploy -A -w
+ 1376  kubectl get deploy -A -w
+ 1377  kubectl logs -n  
+ 1378  kubectl logs -n   system                           controller-manager 
+ 1379  kubectl get deploy -A -w
+ 1380  kubens system
+ 1381  kubectl get po
+ 1382  kubectl get po-o wide
+ 1383  kubectl get po-o wide 
+ 1384  kubectl get po
+ 1385  kubens
+ 1386  kubectl get js
+ 1387  kubectl get ns
+ 1388  ls
+ 1389  kubectl delete -k config/default/
+ 1390  kubectl get po
+ 1391  kubectl get ns
+ 1392  kubectl delete ns  system 
+ 1393  kubectl delete ns  system  --force
+ 1394  kubectl get po
+ 1395  kubectl get ns
+ 1396  kubectl apply -k config/default/
+ 1397  kubectl get ns
+ 1398  kubectl get po
+ 1399  kubens  cert-validator-operator-system 
+ 1400  kubectl get po
+ 1401  kubectl get po -w
+ 1402  ls
+ 1403  kubectl get ns
+ 1404  ls
+ 1405  kubectl get po
+ 1406  kubectl edit po
+ 1407  docker images
+ 1408  docker tag as960408/oswatcher-controller:0.11  as960408/cert-validate-operator:0.11
+ 1409  docker push  as960408/cert-validate-operator:0.11
+ 1410  kubectl get po
+ 1411  kubectl delete po   cert-validator-operator-controller-manager-6dfcb6dbb8-hwbk6 --force
+ 1412  kubectl get po
+ 1413  kubectl logs  cert-validator-operator-controller-manager-6dfcb6dbb8-grfqh -f
+ 1414  kubectl get po
+ 1415  kubectl get po -o wide -w
+ 1416  kubectl logs cert-validator-operator-controller-manager-6dfcb6dbb8-grfqh -F
+ 1417  kubectl logs cert-validator-operator-controller-manager-6dfcb6dbb8-grfqh -f
+ 1418  ls
+ 1419  clear
+ 1420  make run
+ 1421  clear
+ 1422  make run
+ 1423  clear
+ 1424  make run 
+ 1425  env
+ 1426  env |grep -i node
+ 1427  ls
+ 1428  cllear
+ 1429  make run
+ 1430  make generate
+ 1431  make manifests
+ 1432  make install
+ 1433  make run
+ 1434  env |grep -i NODE_SELECTOR
+ 1435  env |grep -i cert
+ 1436  ls
+ 1437  vi internal/controller/certvalidate_controller.go 
+ 1438  ls
+ 1439  clear
+ 1440  make install
+ 1441  make generate
+ 1442  make manifests
+ 1443  nake run 
+ 1444  make run
+ 1445  ls
+ 1446  clear
+ 1447  cat internal/controller/certvalidate_controller.go 
+ 1448  vi internal/controller/certvalidate_controller.go 
+ 1449  env |grep -i cert
+ 1450  env |grep -i nodeS
+ 1451  env |grep -i node
+ 1452  vi internal/controller/certvalidate_controller.go 
+ 1453  clear
+ 1454  kubectl get ds -A |grep cert
+ 1455  kubectl delete ds -n  
+ 1456  default                     cert-agent   
+ 1457  kubectl delete ds -n 
+ 1458  default                     cert-agent   
+ 1459  kubectl delete ds -n  default cert-agent
+ 1460  ls
+ 1461  make install
+ 1462  make run
+ 1463  cleear
+ 1464  clear
+ 1465  vi internal/controller/certvalidate_controller.go 
+ 1466  kubectl get ds -A
+ 1467  kubectl get ds -n default
+ 1468  clear
+ 1469  ls
+ 1470  cd go
+ 1471  ls
+ 1472  cd src/
+ 1473  ls
+ 1474  cd cert-validator-operator/
+ 1475  ls
+ 1476  make run
+ 1477  history |grep -i env
+ 1478  history |grep -i export
+ 1479  export CERT_DIR="/etc/kubernetes/pki"
+ 1480  export SERVER_URL="http://cert-validator-service.default.svc.cluster.local:8080/report"
+ 1481  make run
+ 1482  ls
+ 1483  clear
+ 1484  vi internal/controller/certvalidate_controller.go 
+ 1485  cat internal/controller/certvalidate_controller.go 
+ 1486  c;ear
+ 1487  ;ls
+ 1488  ls
+ 1489  cp internal/controller/certvalidate_controller.go  /tmp/
+ 1490  vi internal/controller/certvalidate_controller.go 
+ 1491  make run
+ 1492  vi internal/controller/certvalidate_controller.go 
+ 1493  ls
+ 1494  vi internal/controller/certvalidate_controller.go 
+ 1495  env |grep -i node_s
+ 1496  env |grep -i cert_s
+ 1497  env |grep -i cert
+ 1498  env |grep -i server
+ 1499  clear
+ 1500  ls
+ 1501  clear
+ 1502  make manifests
+ 1503  make install
+ 1504  ls
+ 1505  clear
+ 1506  make run 
+ 1507  vi internal/controller/certvalidate_controller.go 
+ 1508  make run
+ 1509  history |grep IMG
+ 1510  make docker-build IMG=as960408/oswatcher-controller:0.12
+ 1511  docker images
+ 1512  make docker-build IMG=as960408/cert-validate-operator:0.12
+ 1513  kubectl get ns
+ 1514  kubectl get ds -A
+ 1515  kubectl get certvalidate
+ 1516  kubectl get svc -A
+ 1517  kubectl get svc -A |grep cert
+ 1518  ls
+ 1519  vi config/manager/manager.yaml 
+ 1520  kubectl get svc -A |grep cert
+ 1521  kubectl apply -f config/manager/manager.yaml 
+ 1522  kubectl delete -f config/manager/manager.yaml 
+ 1523  kubectl apply -k config/default/ --dry-run
+ 1524  ks
+ 1525  ls
+ 1526  cd config/
+ 1527  ls
+ 1528  cd default/
+ 1529  ls
+ 1530  vi kustomization.yaml 
+ 1531  cd ../
+ 1532  ls
+ 1533  cd manager/
+ 1534  ls
+ 1535  vi kustomization.yaml 
+ 1536  vi manager.yaml 
+ 1537  cd ..
+ 1538  ls
+ 1539  kubectl apply -k  default/
+ 1540  kubectl apply -k  default/ |grep cert
+ 1541  kubectl apply -k  default  |grep cert
+ 1542  kubectl get svc -A |grep cert
+ 1543  kubectl delete -k .
+ 1544  kubectl delete -k default/
+ 1545  kubectl bet svc -A |grep cert
+ 1546  kubectl get svc -A |grep cert
+ 1547  ls
+ 1548  vi default/kustomization.yaml 
+ 1549  ls
+ 1550  vi default/kustomization.yaml 
+ 1551  ls
+ 1552  vi manager/manager.yaml 
+ 1553  kubectl apply -k default/
+ 1554  kubectl get svc -A
+ 1555  kubectl get svc -A |grep svc
+ 1556  kubectl get svc -A 
+ 1557  docker images
+ 1558  ls
+ 1559  vi  manager/manager.yaml 
+ 1560  ls
+ 1561  kubectl get svc 
+ 1562  kubens 
+ 1563  kubens cert-validator-operator-system
+ 1564  kubectl get svc
+ 1565  ls
+ 1566  vi manager/manager.yaml 
+ 1567  kubectl apply -k default/
+ 1568  kubectl get svc
+ 1569  kubectl get po
+ 1570  kubectl get ds -A
+ 1571  kubectl delete ds -n  default                     cert-agent  --force
+ 1572  kubectl get ds -A -w
+ 1573  kubectl get po  -w
+ 1574  kubectl logs  cert-validator-operator-controller-manager-598cb68cb5-dkmdq 
+ 1575  kubectl logs  cert-validator-operator-controller-manager-598cb68cb5-dkmdq  -f
+ 1576  kubectl get ds -A
+ 1577  kubectl get ds -A -A
+ 1578  kubens default
+ 1579  kubectl get po
+ 1580  kubectl logs  cert-agent-krbj9 
+ 1581  kubectl get po
+ 1582  kubectl exec -it  cert-agent-krbj9 -- sh
+ 1583  kubectl edit ds
+ 1584  ls
+ 1585  kubectl exec -it  cert-agent-krbj9 -- sh
+ 1586  ls
+ 1587  cd ../
+ 1588  ls
+ 1589  cd test/
+ 1590  ls
+ 1591  cd dockerizing/
+ 1592  ls
+ 1593  vi cert_agent.sh 
+ 1594  cat cert_agent.sh 
+ 1595  for CERT_FILE in "$CERT_DIR"/*.crt; do
+ 1596  for CERT_FILE in "$CERT_DIR"/*.crt; do find "$CERT_DIR" -name '*.crt' -type f | while read -r CERT_FILE; do
+ 1597  kubectl get po
+ 1598  kubectl exec -it  cert-agent-zvcw5 -- sh
+ 1599  ls
+ 1600  vi cert_agent.sh 
+ 1601  ls
+ 1602  vi Dockerfile 
+ 1603  ls
+ 1604  vi cert_agent.sh 
+ 1605  ls
+ 1606  vi Dockerfile 
+ 1607  docker images
+ 1608  docker build -t as960408/cert-agent:0.3 .
+ 1609  docker push as960408/cert-agent:0.3
+ 1610  ls
+ 1611  vi cert_agent.sh 
+ 1612  vi Dockerfile 
+ 1613  docker push as960408/cert-agent:0.3
+ 1614  docker build -t as960408/cert-agent:0.3 .
+ 1615  vi Dockerfile  
+ 1616  docker build -t as960408/cert-agent:0.3 .
+ 1617  vi Dockerfile  
+ 1618  docker build -t as960408/cert-agent:0.3 .
+ 1619  docker build -t as960408/cert-agent:0.3 . 
+ 1620  vi Dockerfile  
+ 1621  ls -al /var/cache/apt/
+ 1622  vi Dockerfile  
+ 1623  docker build -t as960408/cert-agent:0.3 . 
+ 1624  vi Dockerfile  
+ 1625  docker build -t as960408/cert-agent:0.3 . 
+ 1626  docker push as960408/cert-agent:0.3
+ 1627  clear
+ 1628  kubectl get po
+ 1629  kubectl get certvalidate
+ 1630  kubectl get certvalidate -w
+ 1631  kubectl get certvalidate |awk {'print $1'}
+ 1632  kubectl get certvalidate |awk {'print $1'}|xargs -i kubectl delete certvalidate {} --force
+ 1633  kubectl get certvalidate |awk {'print $1'}
+ 1634  kubectl get certvalidate |
+ 1635  ls
+ 1636  cd ../../
+ 1637  ls
+ 1638  cd internal/controller/
+ 1639  ls
+ 1640  vi certvalidate_controller.go 
+ 1641  ls
+ 1642  cd ../
+ 1643  ls
+ 1644  cd ../
+ 1645  ls
+ 1646  history |grep IMG
+ 1647  make docker-build IMG=as960408/cert-validate-operator:0.2
+ 1648  docker push as960408/cert-validate-operator:0.2
+ 1649  kubectl apply -k config/default/
+ 1650  kubectl get po
+ 1651  kubectl delete ds cert-agent
+ 1652  kubectl get po
+ 1653  history |grep awk
+ 1654  kubectl get certvalidate |awk {'print $1'}|xargs -i kubectl delete certvalidate {} --force
+ 1655  kubectl get po -
+ 1656  kubectl get po w
+ 1657  kubectl get po 
+ 1658  kubectl get po|awk {'print $1' }
+ 1659  kubectl get po|awk {'print $1'}
+ 1660  kubectl get po|awk {'print $1'}|xargs -i kubectl  delete  {} po --force
+ 1661  kubectl get po
+ 1662  kubectl get certvalidate
+ 1663  kubectl get certvalidate -w
+ 1664  ls
+ 1665  cd internal/
+ 1666  ls
+ 1667  cd controller/
+ 1668  ls
+ 1669  vi certvalidate_controller.go 
+ 1670  vi certvalidate_controller.go  
+ 1671  vi certvalidate_controller.go 
+ 1672  cp certvalidate_controller.go  /tmp/
+ 1673  vi certvalidate_controller.go 
+ 1674  ls
+ 1675  cd ../../
+ 1676  ls
+ 1677  clear
+ 1678  history |grep IMG
+ 1679  make docker-build IMG=as960408/cert-validate-operator:0.21
+ 1680  docker push as960408/cert-validate-operator:0.21 
+ 1681  ls
+ 1682  kubectl apply -k config/default/
+ 1683  kubectl get po
+ 1684  kubectl get po -w
+ 1685  kubectl get po -A 
+ 1686  kubectl get po -A   |grep oper
+ 1687  kubectl get po -A   |grep oper -f
+ 1688  kubectl logs -n cert-validator-operator-system   cert-validator-operator-controller-manager-59b8c4888-6rbrd   -f
+ 1689  ls
+ 1690  vi internal/controller/
+ 1691  s
+ 1692  ls
+ 1693  vi config/manager/manager.yaml 
+ 1694  kubectl apply -k config/default/
+ 1695  ls
+ 1696  clear
+ 1697  ls
+ 1698  cd go
+ 1699  kubectl get ds
+ 1700  kubectl get ds -n default
+ 1701  curl localhost:8081
+ 1702  ls
+ 1703  cd  src/
+ 1704  ls
+ 1705  cd  cert-validator-operator/
+ 1706  ls
+ 1707  cd test/
+ 1708  ls
+ 1709  clear
+ 1710  bash shell.sh 
+ 1711  kubectl get ds
+ 1712  kubectl get ds -A
+ 1713  CLEAR
+ 1714  clear
+ 1715  kubectl get certvalidate -A
+ 1716  ls
+ 1717  kubectl get ds -A
+ 1718  ls
+ 1719  clear
+ 1720  kubectl get ds -A
+ 1721  kubectl get ds -A -W
+ 1722  kubectl get ds -A -w
+ 1723  l
+ 1724  clear
+ 1725  kubectl get certvalidate
+ 1726  kubectl get certvalidate -A
+ 1727  kubectl delete certvalidate  -n default     node1-etc-ssl-certs-nginx.crt 
+ 1728  ls
+ 1729  kubectl get po
+ 1730  kubectl get ds -A
+ 1731  kubectl get ds -A -w
+ 1732  kubectl delete ds -n default                     cert-agent 
+ 1733  kubectl get certvalidate -A
+ 1734  vi /etc/kubernetes/admin.conf 
+ 1735  kubectl get ds
+ 1736  kubectl get ds -A
+ 1737  ls
+ 1738  kubectl get certvalidate
+ 1739  kubectl get certvalidate -A
+ 1740  kubectl get certvalidate -A -w
+ 1741  kubens  default
+ 1742  kubectl get ds
+ 1743  kubectl get ds -A
+ 1744  ls
+ 1745  kubectl get ds -A
+ 1746  kubectl get ds -A 
+ 1747  kubectl get ds -A  -w
+ 1748  kubectl edit ds -n default                     cert-agent 
+ 1749  kubectl delete ds -n   default                     cert-agent   
+ 1750  ls
+ 1751  kubectl get ds -A  -w
+ 1752  docker push as960408/cert-validate-operator:0.12
+ 1753  cd ../
+ 1754  ls
+ 1755  vi config/manager/manager.yaml 
+ 1756  docker push as960408/cert-validate-operator:0.12
+ 1757  kubectl apply -k config/default/
+ 1758  kubectl get po -A 
+ 1759  kubens 
+ 1760  kubens  cert-validator-operator-system
+ 1761  kubectl get po
+ 1762  kubectl logs  cert-validator-operator-controller-manager-6cbd7bd877-nqns8 
+ 1763  kubectl get ds
+ 1764  kubectl get ds -A
+ 1765  kubectl get po -n default
+ 1766  kubectl get certvalidate
+ 1767  kubectl get certvalidate -A
+ 1768  kubens default
+ 1769  kubectl get po
+ 1770  docker images
+ 1771  docker images |grep agent
+ 1772  kubectl get po
+ 1773  kubectl delete deploy ubunyu
+ 1774  kubectl delete deploy ubuntu
+ 1775  kubectl edit ds
+ 1776  kubectl exec -it  cert-agent-8dxvl -- sh
+ 1777  ls
+ 1778  cd test/
+ 1779  ls
+ 1780  cd dockerizing/
+ 1781  ls
+ 1782  vi cert_agent.sh 
+ 1783  ls
+ 1784  history |grep cert_agent.sh 
+ 1785  ls
+ 1786  vi Dockerfile 
+ 1787  docker images
+ 1788  docker     build -t . as960408/cert-agent:0.2  
+ 1789  docker  .   build -t  as960408/cert-agent:0.2  
+ 1790  docker build -t as960408/cert-agent:0.2 .
+ 1791  docker push as960408/cert-agent:0.2
+ 1792  kubectl edit ds
+ 1793  kubectl get po
+ 1794  kubectl get po|awk {'print $1'} 
+ 1795  kubectl get po|awk {'print $1'}|xargs -i kubectl delete po {} --force
+ 1796  kubectl get po -w
+ 1797  kubectl logs  cert-agent-s955r -f
+ 1798  kubectl get po -w
+ 1799  kubectl logs  cert-agent-s955r -f
+ 1800  kubectl get certvalidate
+ 1801  kubectl get po
+ 1802  kubectl exec -it   cert-agent-2zff6 -- sh
+ 1803  ls
+ 1804  cd ../
+ 1805  ls
+ 1806  cd ,,.
+ 1807  kls
+ 1808  ls
+ 1809  cd ../
+ 1810  ls
+ 1811  vi internal/controller/certvalidate_controller.go 
+ 1812  ls
+ 1813  clear
+ 1814  history |grep IMG
+ 1815  DOCKER IMAGES
+ 1816  docker images
+ 1817  make make docker-build  IMG=as960408/cert-agent:0.21
+ 1818  make docker-build  IMG=as960408/cert-agent:0.21
+ 1819  docker tag as960408/cert-agent:0.21 as960408/cert-validate-operator:0.13
+ 1820  docker rmi as960408/cert-agent:0.21
+ 1821  docker push
+ 1822  docker images
+ 1823  docker push as960408/cert-validate-operator:0.13
+ 1824  kubectl get certvalidate
+ 1825  kubectl get certvalidate -A
+ 1826  kubectl get certvalidate -A -w
+ 1827  kubectl get certvalidate
+ 1828  kubectl get certvalidate -A
+ 1829  kubectl get certvalidate -A -w
+ 1830  kubectl get po
+ 1831  kubectl edit ds
+ 1832  kubectl get po
+ 1833  kubectl get po|awk {'print $!'}  
+ 1834  kubectl get po|awk {'print $1'}
+ 1835  kubectl get po|awk {'print $1'}|xargs -i kubectl delete po {} --force
+ 1836  kubectl get po -w
+ 1837  kubectl get po -o wide
+ 1838  kubectl get po -o wide -w
+ 1839  LS
+ 1840  ls
+ 1841  cd config/
+ 1842  ls
+ 1843  cd default/
+ 1844  cd ../
+ 1845  ls
+ 1846  cd manager/
+ 1847  ls
+ 1848  vi manager.yaml 
+ 1849  kubectl get oi
+ 1850  kubectl get po
+ 1851  kubectl logs cert-agent-7fdrx
+ 1852  kubectl logs cert-agent-7fdrx -w
+ 1853  kubectl logs cert-agent-7fdrx
+ 1854  clear
+ 1855  top -d 1
+ 1856  kubectl get certvalidate
+ 1857  ls
+ 1858  vi manager.yaml 
+ 1859  kubectl get po
+ 1860  kubectl get ds -A
+ 1861  kubectl get po
+ 1862  kubectl get cervalidate
+ 1863  history |grep awk
+ 1864  kubectl get certvalidate
+ 1865  kubectl get certvalidate|awk {'print $1'}
+ 1866  kubectl get certvalidate|awk {'print $1'}|xargs -i kubectl delete certvalidate {} --force
+ 1867  kubectl get certvalidate|awk {'print $1'}
+ 1868  kubectl get po
+ 1869  kubectl get po -w
+ 1870  kubectl delete po cert-agent-7454r --force
+ 1871  kubectl delete po cert-agent-xs5p6 --force
+ 1872  kubectl get po
+ 1873  kubectl get certvalidate
+ 1874  kubectl get certvalidate -A
+ 1875  kubectl logs  cert-agent-xw7j8 
+ 1876  ls
+ 1877  kubectl get certvalidate 
+ 1878  kubectl get certvalidate  -A
+ 1879  kubectl get po
+ 1880  clear
+ 1881  kubectl get po
+ 1882  kubectl get po -w
+ 1883  kubectl get certvalidate 0w
+ 1884  kubectl get certvalidate -w
+ 1885  clear
+ 1886  ip a
+ 1887  clear
+ 1888  kubectl get po
+ 1889  kubectl get node
+ 1890  kubectl get certvalidat
+ 1891  kubectl get certvalidate
+ 1892  kubectl get certvalidate -w
+ 1893  ls
+ 1894  clear
+ 1895  cd ../../
+ 1896  ls
+ 1897  git init
+ 1898  ls
+ 1899  git add .
+ 1900  git commit -m operator 
+ 1901  git branch -M main
+ 1902  git remote add origin https://github.com/as960408/cert-validator-operator.git
+ 1903  git push -u origin main
+ 1904  sudo -i
+ 1905  cat /etc/os-release 
+ 1906  clear
+ 1907  cd /etc/apt/
+ 1908  ls
+ 1909  cat sources.list
+ 1910  cd sources.list.d/
+ 1911  ls
+ 1912  cat archive_uri-https_download_docker_com_linux_ubuntu-noble.list 
+ 1913  mv ./*.list /tmp/
+ 1914  apt search linux
+ 1915  apt search linux-generic
+ 1916  ls
+ 1917  apt update
+ 1918  vi 1.list
+ 1919  apt update
+ 1920  apt search linux-generic
+ 1921  apt search linux-genericls
+ 1922  apt update
+ 1923  ls
+ 1924  cd /home/ubuntu/
+ 1925  ls
+ 1926  cd ubuntu
+ 1927  cd ../
+ 1928  ls
+ 1929  clear
+ 1930  ls
+ 1931  cd ubuntu_repository_orgin/
+ 1932  ls
+ 1933  cp ubuntu.sources /etc/apt/
+ 1934  cd /etc/apt/
+ 1935  ls
+ 1936  cd sources.list.d/
+ 1937  ls
+ 1938  rm -rf 1.list 
+ 1939  apt update
+ 1940  ls
+ 1941  apt search vim
+ 1942  apt search linux-generic
+ 1943  ls
+ 1944  clear
+ 1945  apt search linux-generic
+ 1946  hisotry |grep gene
+ 1947  history |grep gene
+ 1948  [200~apt-cache policy linux-generic
+ 1949  ~
+ 1950  apt-cache policy linux-generic
+ 1951  apt-cache search linux-image-6.8
+ 1952  ls
+ 1953  ls -al
+ 1954  vi 1.list
+ 1955  apt update
+ 1956  apt-cache search linux-image-6.8
+ 1957  apt-cache policy linux-generic
+ 1958  apt-cache search linux-image-6.8
+ 1959  apt-cache policy linux-generic
+ 1960  apt install 6.8.0-57.59
+ 1961  apt install linux-generic-6.8.0-57.59
+ 1962  apt install linux-generic
+ 1963  apt install linux-generic-6.8.0-57
+ 1964  apt install linux-generic
+ 1965  apt install linux-image-6.8.0-57-generic
+ 1966  clear
+ 1967  apt install --install-recommends linux-generic 
+ 1968  clear
+ 1969  ls
+ 1970  cd /etc/
+ 1971  ls
+ 1972  cd apt/
+ 1973  ls
+ 1974  clear
+ 1975  apt install --install-recommends linux-generic  --download-only
+ 1976  ls
+ 1977  cd /var/cache/a
+ 1978  cd /var/cache/ap
+ 1979  cd /var/cache/
+ 1980  ls
+ 1981  cd apt/
+ 1982  ls
+ 1983  clear
+ 1984  cd archives/
+ 1985  ls
+ 1986  rm -rf ./*.deb
+ 1987  apt install --install-recommends linux-generic  --download-only
+ 1988  ls
+ 1989  kubectl get po
+ 1990  kubectl get po -A
+ 1991  kubectl edit po -n ks-operator                      kube-state-metrics-7f468f5b46-sq66b
+ 1992  kubectl get node
+ 1993  clear
+ 1994  kubectl get po -A 
+ 1995  kubectl get po -A  |grep exp
+ 1996  kubectl get node -o wide
+ 1997  kubectl cordon mgmt-test-jjw.master03
+ 1998  kubectl uncordon mgmt-test-jjw.master03
+ 1999  ~~
+ 2000  sudo -i
+ 2001  clear
+ 2002  ls
+ 2003  cd               go/
+ 2004  ls
+ 2005  cd src/
+ 2006  lss
+ 2007  ls
+ 2008  clear
+ 2009  ls
+ 2010  cd cert-validator-operator/
+ 2011  ls
+ 2012  kubectl get certvalidate
+ 2013  kubectl get certvalidate -w
+ 2014  history 
+ 2015  history  |grep init
+ 2016  history   > hs.log

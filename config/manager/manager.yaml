@@ -63,7 +63,7 @@ spec:
         args:
           - --leader-elect
           - --health-probe-bind-address=:8081
-        image: as960408/cert-validate-operator:0.2
+        image: as960408/cert-validate-operator:0.3
         name: manager
         env:
         - name: NODE_SELECTOR

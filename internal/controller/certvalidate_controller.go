@@ -81,10 +81,18 @@ func (r *CertValidateReconciler) createOrUpdateDaemonSet(ctx context.Context, na
 					Containers: []corev1.Container{
 						{
 							Name:  "agent",
-							Image: "as960408/cert-agent:0.3",
+							Image: "as960408/cert-agent:0.4",
 							Env: []corev1.EnvVar{
 								{Name: "CERT_DIR", Value: certDir},
 								{Name: "SERVER_URL", Value: serverURL},
+								{
+									Name: "NODE_NAME",
+									ValueFrom: &corev1.EnvVarSource{
+										FieldRef: &corev1.ObjectFieldSelector{
+											FieldPath: "spec.nodeName",
+										},
+									},
+								},
 							},
 							VolumeMounts: []corev1.VolumeMount{
 								{

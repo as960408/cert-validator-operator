@@ -52,7 +52,7 @@ while true; do
       # JSON 데이터 생성
       JSON_PAYLOAD=$(cat <<EOF
 {
-  "nodeName": "$(hostname)",
+  "nodeName": "$NODE_NAME",
   "filePath": "$CERT_FILE_PATH",
   "expiry": "$EXPIRY_DATE",
   "valid": $VALID
