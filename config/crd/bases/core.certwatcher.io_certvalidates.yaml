@@ -21,6 +21,9 @@ spec:
     - jsonPath: .spec.valid
       name: valid
       type: string
+    - jsonPath: .metadata.creationTimestamp
+      name: age
+      type: date
     name: v1alpha1
     schema:
       openAPIV3Schema:

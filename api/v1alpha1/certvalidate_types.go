@@ -48,6 +48,7 @@ type CertValidateStatus struct {
 
 // +kubebuilder:printcolumn:name="expirity",type=string,JSONPath=`.spec.expiry`
 // +kubebuilder:printcolumn:name="valid",type=string,JSONPath=`.spec.valid`
+// +kubebuilder:printcolumn:name="age",type=date,JSONPath=`.metadata.creationTimestamp`
 // CertValidate is the Schema for the certvalidates API.
 type CertValidate struct {
 	metav1.TypeMeta   `json:",inline"`
